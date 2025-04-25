@@ -8,6 +8,7 @@
   body {
     font-family: sans-serif;
     background-color: #f5f5f5;
+    line-height: 1.6;
   }
   
   .navbar {
@@ -18,8 +19,6 @@
     align-items: center;
     padding: 15px 10%;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
   }
   
   .logo {
@@ -168,6 +167,7 @@ body {
 .nav-links a:hover {
   color: #00bcd4;
 }
+  
 
 .about-section {
     height: 100vh; /* Full screen height */
@@ -264,15 +264,39 @@ body {
   
   /* Footer  */
   .footer {
-    background-color: #1a1a1a;
+    position: relative;
+    background: #222;
     color: white;
-    padding: 30px 10%;
+    padding: 40px 20px;
     text-align: center;
-    /* margin-top: 50px; */
-    margin-top: 0;
-
-    
+    width: 100%;
   }
+  .about-section {
+    padding: 60px 20px;
+    margin-bottom: 100px; /* Gives space between content and footer */
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-image img {
+      width: 80%;
+      max-width: 250px;
+    }
+  
+    .about-text {
+      padding-top: 20px;
+    }
+  }
+        
   
   .footer-content {
     display: flex;
@@ -427,3 +451,52 @@ body {
   .main-content a{
     text-decoration: none;
   }
+  /* Responsive */
+  /* For tablets and below */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content,
+  .project-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-content img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}
+
+/* For phones and small screens */
+@media (max-width: 480px) {
+  .main-content h1 {
+    font-size: 1.8em;
+  }
+
+  .main-content p,
+  .about-text p {
+    font-size: 1em;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.95em;
+  }
+}
