@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Navbar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -16,11 +16,17 @@
       <li><a href="./contact.html">Contact</a></li>
     </ul>
   </nav>
-  <div class="home">
-      <h1>Hi! I Am Ishan Shrestha</h1>
-      <p>Aspiring Web Developer | SEE Graduate</p>
-      <button><a href="./about.html">Click Here For More Detail. </a></button>
-  </div>
+
+  <section class="contact-section">
+    <h1>Contact Me</h1>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
   <footer class="footer">
     <div class="footer-content">
       <p>© 2025 Ishan Shrestha. All rights reserved.</p>
@@ -31,6 +37,5 @@
       </div>
     </div>
   </footer>
-  
 </body>
 </html>
