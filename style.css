@@ -359,4 +359,40 @@ body {
   .contact-form button:hover {
     background-color: #00bcd4;
   }
+  .contact-info {
+    margin-top: 30px;
+    font-size: 1em;
+    color: #333;
+  }
   
+  .contact-info p {
+    margin: 5px 0;
+  }
+  .home a{
+    text-decoration: none;
+  }
+  .contact-info i {
+    color: #00bcd4;
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+  }
+  /* Transtaction */
+  .project-card, .contact-form button {
+    transition: all 0.3s ease;
+  }
+  .project-card:hover {
+    transform: scale(1.03);
+  }
+  .contact-section {
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  }
+  body {
+    background: url('images/bg-texture.png');
+  }
+  .project-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+        
